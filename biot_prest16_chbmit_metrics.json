@@ -35,4 +35,5 @@
     "BATCH_SIZE_TRAIN": 64,
     "BATCH_SIZE_EVAL": 256
   }
+
 }
