@@ -70,13 +70,13 @@ All runs are logged to TensorBoard:
 
 ---
 
-###  5) Interpretability (Attention Visualization)
+### 5) Interpretability (Attention Visualization)
 
 The BIOT codebase does not directly expose attention weights, so I visualized attention using a **QK-based reconstruction**:
 
-\[
-\text{Attention} = \text{softmax}\left(\frac{QK^\top}{\sqrt{d}}\right)
-\]
+$$
+\mathrm{Attention}=\mathrm{softmax}\left(\frac{QK^\top}{\sqrt{d}}\right)
+$$
 
 **What I logged**
 - Attention maps from **early**, **middle**, and **late** transformer layers
