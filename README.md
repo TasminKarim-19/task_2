@@ -103,11 +103,4 @@ $$
 - **Focal loss** for rare seizure positives
 - Attention interpretability via **QK-based attention reconstruction** and TensorBoard logging
 
-- | Component | Choice |
-|---|---|
-| Windowing | **10s + overlap** |
-| Harmonization | montage + resample + **95th %ile normalization** |
-| Training | scratch  + fine-tune pretrained  |
-| Main metric | **AUC-PR (primary)** |
-| Loss | **Focal Loss** |
-| Interpretability | QK-based attention + TensorBoard |
+
