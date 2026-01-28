@@ -1,6 +1,14 @@
 # task_2
 ## BIOT-style Pipeline (CHB-MIT) — Preprocessing, Training, Evaluation, Interpretability
 
+
+![EEG](https://img.shields.io/badge/EEG-CHB--MIT-blue)
+![Model](https://img.shields.io/badge/Model-BIOT%20Transformer-purple)
+![Task](https://img.shields.io/badge/Task-Seizure%20Detection-red)
+![Logging](https://img.shields.io/badge/Tracking-TensorBoard-orange)
+![Metrics](https://img.shields.io/badge/Metrics-AUC--PR%20%7C%20AUROC%20%7C%20BalAcc-green)
+
+
 This project follows the **BIOT idea**: make EEG from different sources **compatible** before feeding it into a **single transformer model**.  
 For CHB-MIT, I convert raw EDF recordings into a unified windowed representation, then train BIOT in two settings: **from scratch** and **fine-tuning** from the **official pretrained BIOT checkpoint**.
 
