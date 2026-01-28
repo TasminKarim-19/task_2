@@ -1,5 +1,5 @@
 # task_2
-## BIOT-style Pipeline (CHB-MIT) — Preprocessing, Training, Evaluation, Interpretability
+## BIOT- Pipeline (CHB-MIT): Preprocessing, Training, Evaluation, Interpretability
 
 
 ![EEG](https://img.shields.io/badge/EEG-CHB--MIT-blue)
