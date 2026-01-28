@@ -101,3 +101,38 @@ $$
 - Attention interpretability via **QK-based attention reconstruction** and TensorBoard logging
 
 
+ 
+ Attention Analysis (Scratch vs Fine-tuned)
+
+Below are the TensorBoard attention-map snapshots (manual QK reconstruction) from **early / middle / late** transformer layers.
+
+### 1) Scratch training (baseline)
+- **Middle layer:** attention is relatively **diffuse** with weak structure → mostly **generic temporal mixing** 
+- **Late layer:** slightly more structure than the middle layer, but still **no strong localized focus** → limited task specialization.
+
+**Takeaway (scratch):** deeper layers do not automatically become task-aware; attention remains broadly distributed.
+
+---
+
+### 2) Fine-tuning (pretrained BIOT → CHB-MIT)
+Compared to scratch, fine-tuning produces attention maps that are:
+- **More structured and selective** 
+- **Sparser** (large near-zero regions)
+- Often showing **vertical “stripes”** → some tokens become consistently important across the sequence
+
+**Takeaway (fine-tuned):** pretrained BIOT provides a strong inductive bias; attention quickly becomes **task-aligned** and **more focused** in deeper layers.
+
+---
+
+###  Summary Table
+
+| Setting | Layer | Attention Pattern | Interpretation |
+|---|---|---|---|
+| Scratch | Middle | Diffuse, weak structure | Generic temporal mixing |
+| Scratch | Late | Slightly structured but noisy | Limited specialization |
+| Fine-tuned | Middle | Emerging structured patterns | Beginning task alignment |
+| Fine-tuned | Late | Highly sparse & structured | Strong task-focused attention |
+
+> **Overall:** Fine-tuning transforms BIOT attention from **diffuse mixing** to **structured, token-selective patterns**, especially in **late layers**, consistent with task specialization for seizure detection.
+
+
