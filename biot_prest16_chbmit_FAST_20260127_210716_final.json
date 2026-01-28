@@ -1,0 +1,38 @@
+{
+  "task": "CHB-MIT seizure detection (PREST-16 finetune, FAST)",
+  "init_ckpt": "C:\\Users\\user01\\PycharmProjects\\task\\BIOT\\pretrained-models\\EEG-PREST-16-channels.ckpt",
+  "inferred_model": {
+    "emb_size": 256,
+    "depth": 4,
+    "heads": 16
+  },
+  "loaded_params": 57,
+  "best_ckpt": "biot_prest16_chbmit_FAST_20260127_210716_best.pt",
+  "log_dir": "runs\\biot_prest16_chbmit_FAST_20260127_210716",
+  "best": {
+    "epoch": 2,
+    "val_loss": 0.004732806248925242,
+    "val_metrics": {
+      "n_pos": 120.0,
+      "n_neg": 43270.0,
+      "auc_pr": 0.004407712144783593,
+      "auroc": 0.6340393652260996,
+      "bacc": 0.4997226715969494
+    },
+    "test_loss": 0.0027275725381383665,
+    "test_metrics": {
+      "n_pos": 142.0,
+      "n_neg": 41226.0,
+      "auc_pr": 0.09477558182368215,
+      "auroc": 0.9610070186802666,
+      "bacc": 0.5173024270886074
+    }
+  },
+  "config": {
+    "EPOCHS": 2,
+    "MAX_STEPS_PER_EPOCH": 200,
+    "FREEZE_ENCODER_EPOCHS": 1,
+    "BATCH_SIZE_TRAIN": 64,
+    "BATCH_SIZE_EVAL": 256
+  }
+}

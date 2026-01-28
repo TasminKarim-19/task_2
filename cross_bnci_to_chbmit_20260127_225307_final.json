@@ -1,0 +1,25 @@
+{
+  "run": "cross_bnci_to_chbmit_20260127_225307",
+  "bnci_bundle": "C:\\Users\\user01\\PycharmProjects\\task\\biot_sleepedf_scratch_best.pt",
+  "best_ckpt": "cross_bnci_to_chbmit_20260127_225307_best.pt",
+  "tensorboard_logdir": "runs\\cross_bnci_to_chbmit_20260127_225307",
+  "best": {
+    "epoch": 2,
+    "val": {
+      "n_pos": 120.0,
+      "n_neg": 43270.0,
+      "auc_pr": 0.0021912493372939243,
+      "auroc": 0.4297407749788152,
+      "bacc": 0.4529552807950081,
+      "f1": 0.0011372251705837756
+    },
+    "test": {
+      "n_pos": 142.0,
+      "n_neg": 41226.0,
+      "auc_pr": 0.2046665497547928,
+      "auroc": 0.9414862287780925,
+      "bacc": 0.729693691182168,
+      "f1": 0.185595567867036
+    }
+  }
+}
