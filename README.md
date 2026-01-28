@@ -90,9 +90,6 @@ $$
 - Attention maps from **early**, **middle**, and **late** transformer layers
 - Logged directly into TensorBoard for side-by-side comparison across training settings
 
-**Summary observation**
-- After fine-tuning, attention becomes more **structured** and **task-focused** in deeper layers, consistent with specialization toward seizure-relevant patterns.
-
 ---
 
 ##  Summary
